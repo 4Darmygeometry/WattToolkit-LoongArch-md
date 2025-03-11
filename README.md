@@ -123,11 +123,12 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 ### X86处理器
 - 满足上述操作系统安装最低要求及以上的的x86-64 CPU
 - 对于兆芯处理器，建议使用KX-U6780A及以上处理器以保障程序可以流畅运行。
+- 假如使用兆芯核显显示此程序，建议使用C-1190及以上的核显并在[此处](https://www.zhaoxin.com/qdxz.aspx?nid=31&typeid=595)下载核显驱动。
 ### ARM处理器
 - ARM V8(aarch64)及以上CPU
 - 对于飞腾处理器，建议使用飞腾D2000及以上处理器以保障程序可以流畅运行。
 ### 龙芯
-- 3A5000及以上含有LSX扩展指令的LoongArch64 CPU。MIPS(LoongISA)、LoongArch32或不含有LSX扩展指令的，如3A4000、2K0300，在此不受支持。
+- 64位龙架构(LoongArch64)且含有LSX、[LASX](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的龙芯CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
 
 ## 🧩 截图
 <img src="./res/screenshots/screenshot-windows-accelerator.webp" width="800" />
