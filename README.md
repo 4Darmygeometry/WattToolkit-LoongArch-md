@@ -128,7 +128,9 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 - ARM V8(aarch64)及以上CPU
 - 对于飞腾处理器，建议使用飞腾D2000及以上处理器以保障程序可以流畅运行。
 ### 龙芯
-- 64位龙架构(LoongArch64)且含有LSX、[LASX](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的龙芯CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
+- 64位龙架构(LoongArch64)且含有**LSX**、[**LASX**](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的龙芯CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
+### RISC-V处理器
+- 支持**RVV**扩展指令的RISC-V64 CPU。
 
 ## 🧩 截图
 <img src="./res/screenshots/screenshot-windows-accelerator.webp" width="800" />
