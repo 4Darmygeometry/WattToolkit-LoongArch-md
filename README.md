@@ -63,7 +63,8 @@
 	- 强制游戏窗口使用无边框窗口化、更多功能待开发。
 
 ## 🖥️ 支持的操作系统
-### 下面所列操作系统为该操作系统的x86-64版本。Windows 7、8.1等旧版Windows用户、Windows 10版本低于1809的用户或32位操作系统用户请在Release中下载旧版使用。
+### 下面所列操作系统为该操作系统的x86-64版本。Windows 7、8、8.1、Windows 10版本低于1809的64位Windows用户自行在[Install .NET on Windows](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60&pivots=os-windows#dependencies)下载兼容补丁后使用本程序。
+### 32位操作系统，Windows XP及以下的用户请在Release中下载旧版使用。
 - Windows 11
 - Windows 10 版本 1809（OS 内部版本 17763）或更高版本
 - macOS 10.15 或更高版本
