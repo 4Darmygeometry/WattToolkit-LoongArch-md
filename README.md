@@ -81,7 +81,7 @@
 ### 龙芯用户请下载Release中的测试版。运行Watt Toolkit龙芯版需达到Linux内核>=6.6、glibc>=2.40的要求（deepin 23除外）。下列为龙芯版目前所适配的操作系统（均为新世界系统）：
 - [Deepin 23 或更高版本](https://www.deepin.org/zh/download/)
 - [AOSC OS 12 或更高版本](https://aosc.io/download)
-- Loongnix 25 或更高版本
+- [Loongnix 25 或更高版本](https://pkg.loongnix.cn/loongnix/25/isos/)
 - [Loongnix Server 23.1 或更高版本](http://pkg.loongnix.cn/loongnix-server/23.1/isos/)
 - [Yongbao 2.10 或更高版本](https://mirrors.wsyu.edu.cn/fedora/linux/Yongbao/2.10/) 16K内核
 ### 常见问题
