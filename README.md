@@ -122,14 +122,14 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 解决方法：将host代理加速改成system代理加速
 ## 🔲 支持的处理器
 ### X86处理器
-- 满足上述操作系统安装最低要求及以上的的x86-64 CPU
+- 支持**SSE4.2**扩展指令的x86_64 CPU
 - 对于兆芯处理器，建议使用KX-U6780A及以上处理器以保障程序可以流畅运行。
 - 假如使用兆芯核显显示此程序，建议使用C-1190及以上的核显并在[此处](https://www.zhaoxin.com/qdxz.aspx?nid=31&typeid=595)下载核显驱动。
-### ARM处理器
-- ARM V8(aarch64)及以上CPU
+### ARM处理器（包括手机处理器）
+- 支持**NEON**扩展指令的ARM V8(aarch64)及以上CPU/SoC
 - 对于飞腾处理器，建议使用飞腾D2000及以上处理器以保障程序可以流畅运行。
-### 龙芯
-- 64位龙架构(LoongArch64)且含有**LSX**、[**LASX**](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的龙芯CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
+### 龙芯处理器
+- 支持**LSX**、[**LASX**](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的64位龙架构(LoongArch64)CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
 ### RISC-V处理器
 - 支持**RVV**扩展指令的RISC-V64 CPU。
 
