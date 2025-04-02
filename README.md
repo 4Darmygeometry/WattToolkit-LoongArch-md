@@ -84,6 +84,7 @@
 - [Loongnix 25 或更高版本](https://pkg.loongnix.cn/loongnix/25/isos/)
 - [Loongnix Server 23.1 或更高版本](http://pkg.loongnix.cn/loongnix-server/23.1/isos/)
 - [Yongbao 2.10 或更高版本](https://mirrors.wsyu.edu.cn/fedora/linux/Yongbao/2.10/) 16K内核
+### 目前Watt Toolkit Linux版仅支持使用**Glibc**库的Linux发行版。Alpine Linux等使用**musl**库的Linux发行版请使用其他加速工具或自行修改源代码构建。
 ### 常见问题
 #### Deepin 23：
 - error while loading shared libraries: unexpected reloc type 0x0e
