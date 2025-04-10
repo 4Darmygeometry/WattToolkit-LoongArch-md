@@ -135,7 +135,7 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 - 由于MIPS、LoongArch32不在.NET的[Architecture Enum](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.architecture?view=net-9.0)中，本软件不支持MIPS、LoongArch32处理器。
 ### RISC-V处理器
 - 能流畅运行主流Linux发行版的RISC-V64处理器。
-- 推荐使用**8核以上**且支持**RVV 1.0**扩展指令的RISC-V64处理器（例如SpacemiT Key Stone K1）以保障程序可以流畅运行。
+- 推荐使用**8核**，且支持**RVV 1.0**扩展指令及以上的RISC-V64处理器（例如SpacemiT Key Stone K1）以保障程序可以流畅运行。
 ### 其他指令集的CPU目前暂不支持。
 
 ## 🧩 截图
