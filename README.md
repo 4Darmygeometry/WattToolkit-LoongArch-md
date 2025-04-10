@@ -84,7 +84,7 @@
 - [Loongnix 25 或更高版本](https://pkg.loongnix.cn/loongnix/25/isos/)
 - [Loongnix Server 23.1 或更高版本](http://pkg.loongnix.cn/loongnix-server/23.1/isos/)
 - [Yongbao 2.10 或更高版本](https://mirrors.wsyu.edu.cn/fedora/linux/Yongbao/2.10/) 16K内核
-### 目前Watt Toolkit Linux版仅支持使用**Glibc**库的Linux发行版。Alpine Linux等使用**musl**库的Linux发行版请使用其他加速工具或自行修改源代码构建。
+### 目前Watt Toolkit Linux版仅支持使用**Glibc**库的Linux发行版并要求在**图形界面**上运行，Alpine Linux等使用**musl**库的Linux发行版请使用其他加速工具或自行修改源代码构建。运行前请至少安装**X11**图形界面并以图形界面形式启动Linux。
 ### 常见问题
 #### Deepin 23：
 - error while loading shared libraries: unexpected reloc type 0x0e
@@ -125,16 +125,18 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 ### X86处理器
 - 支持**SSE4.2**扩展指令的x86_64 CPU
 - 对于兆芯处理器，建议使用KX-U6780A及以上处理器以保障程序可以流畅运行。
-- 假如使用兆芯核显显示此程序，建议使用C-1190及以上的核显并在[此处](https://www.zhaoxin.com/qdxz.aspx?nid=31&typeid=595)下载核显驱动。
+- 假如使用兆芯核显显示此程序，建议使用C-1190及以上的核显以保障程序可以流畅运行，并在[此处](https://www.zhaoxin.com/qdxz.aspx?nid=31&typeid=595)下载核显驱动。
 ### ARM处理器（包括手机处理器）
 - 支持**ARM SIMD**扩展指令(NEON/ASIMD)的ARM V8(aarch64)及以上CPU/SoC
 - 对于飞腾处理器，建议使用飞腾D2000及以上处理器以保障程序可以流畅运行。
 - 对于树莓派开发板，建议使用树莓派5B及以上以保障程序可以流畅运行。
 ### 龙芯处理器
-- 支持**LSX**、[**LASX**](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的64位龙架构(LoongArch64)CPU。MIPS(LoongISA)的，如龙芯2F、3A1000-3A4000；LoongArch32、不含有LSX扩展指令的，如2K0300；[含有LSX扩展指令但不含有LASX扩展指令的，如2K1000、2K2000](https://github.com/dotnet/runtime/issues/113354)；在此不受支持。
+- 支持**LSX**、[**LASX**](https://github.com/loongson-community/dotnet-unofficial-build/issues/9)扩展指令的64位龙架构(LoongArch64)CPU。LoongArch64 .NET平台有LSX及LASX强制要求，本软件不得不遵守。
+- 由于MIPS、LoongArch32不在.NET的[Architecture Enum](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.architecture?view=net-9.0)中，本软件不支持MIPS、LoongArch32处理器。
 ### RISC-V处理器
-- 能流畅运行主流Linux发行版的RISC-V64 CPU。
-- 推荐使用支持**RVV 1.0**扩展指令的RISC-V64 CPU。
+- 能流畅运行主流Linux发行版的RISC-V64处理器。
+- 推荐使用**8核以上**且支持**RVV 1.0**扩展指令的RISC-V64处理器（例如SpacemiT Key Stone K1）以保障程序可以流畅运行。
+### 其他指令集的CPU目前暂不支持。
 
 ## 🧩 截图
 <img src="./res/screenshots/screenshot-windows-accelerator.webp" width="800" />
