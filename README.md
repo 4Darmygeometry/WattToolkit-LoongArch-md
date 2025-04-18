@@ -124,7 +124,7 @@ Failed to create CoreCLR, HRESULT: 0x8007000E
 ## 🔲 支持的处理器
 ### X86处理器
 - 支持**SSE4.2**扩展指令的x86_64 CPU
-- 对于兆芯处理器，建议使用KX-U6780A及以上处理器以保障程序可以流畅运行。
+- 如果有Steam游戏需求，建议使用支持**AVX2**扩展指令的处理器（Intel Core i3-4150/AMD Ryzen 3 1200/兆芯KX-7000 及以上）以兼容绝大部分Steam游戏。
 - 假如使用兆芯核显显示此程序，建议使用C-1190及以上的核显以保障程序可以流畅运行，并在[此处](https://www.zhaoxin.com/qdxz.aspx?nid=31&typeid=595)下载核显驱动。
 ### ARM处理器（包括手机处理器）
 - 支持**ARM SIMD**扩展指令(NEON/ASIMD)的ARM V8(aarch64)及以上CPU/SoC
