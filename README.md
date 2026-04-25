@@ -1,5 +1,13 @@
 # WattToolkit-LoongArch-md
 提供Watt Toolkit（Steam++）龙架构版所依赖的so文件以及nuget包
+
+注意：自SkiaSharp 3.119.4-preview.1.1、HarfBuzzSharp 8.3.1.5-preview.1.1起，无须在这里下载so手动替换，仅需
+
+dotnet add package SkiaSharp --version 3.119.4-preview.1.1
+
+dotnet add package HarfBuzzSharp --version 8.3.1.5-preview.1.1
+
+e_sqlite3可以在https://lnuget.loongnix.cn 拿
 # 使用方法
 在构建项目中创建WattToolkit/native/linux-loongarch64/文件夹，将libe_sqlite3.so、libHarfBuzzSharp.so、libonigwrap.so、libSkiaSharp.so全部移入，然后在[龙架构新世界.net](https://github.com/loongson-community/dotnet-unofficial-build)中下载SDK，提取出运行时，放入WattToolkit/dotnet/文件夹，即可构建出完整的龙架构Watt Toolkit。
 # 这些so是否为开源项目所构建
